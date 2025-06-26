@@ -1,0 +1,39 @@
+/* Add Plant Styles */
+.add-plant-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-plant-container h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.add-plant-container label {
+    margin: 10px 0 5px;
+}
+
+.add-plant-container input, .add-plant-container textarea, .add-plant-container select {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.add-plant-container button {
+    margin-top: 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.add-plant-container button:hover {
+    background-color: darkgreen;
+}

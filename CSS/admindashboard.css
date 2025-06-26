@@ -1,0 +1,50 @@
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    font-size: 1.1rem;
+    color: green;
+}
+
+/* Dashboard Stats */
+.dashboard-stats {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.stat-box {
+    padding: 20px;
+    background-color: green;
+    border-radius: 7px;
+
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.stat-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}

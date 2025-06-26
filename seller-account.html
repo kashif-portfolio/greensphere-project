@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Account</title>
+    <link rel="stylesheet" href="css/Greensphare css.css">
+</head>
+<body>
+    <header>
+        <h1>Seller Dashboard</h1>
+        
+
+    <section id="profile">
+        <h2>Manage Profile</h2>
+        <form id="profile-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <button type="submit" class="btn">Update Profile</button>
+        </form>
+    </section>
+
+    <section id="add-product">
+        <h2>Add Product</h2>
+        <form id="product-form">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" placeholder="Enter product name" required>
+            <label for="product-price">Price:</label>
+            <input type="number" id="product-price" name="product-price" placeholder="Enter product price" required>
+            <label for="product-description">Description:</label>
+            <textarea id="product-description" name="product-description" placeholder="Enter product description" required></textarea>
+            <button type="submit" class="btn">Add Product</button>
+        </form>
+    </section>
+
+    <section id="manage-products">
+        <h2>Manage Products</h2>
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Product rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="js/green sphare.js"></script>
+    <script>
+        // JavaScript to handle form submissions and dynamic table updates
+        const productForm = document.getElementById('product-form');
+        const productTable = document.getElementById('product-table').querySelector('tbody');
+
+        productForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const productName = document.getElementById('product-name').value;
+            const productPrice = document.getElementById('product-price').value;
+            const productDescription = document.getElementById('product-description').value;
+
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td>${productName}</td>
+                <td>${productPrice}</td>
+                <td>${productDescription}</td>
+                <td>
+                    <button class='btn edit-btn'>Edit</button>
+                    <button class='btn delete-btn'>Delete</button>
+                </td>
+            `;
+
+            productTable.appendChild(newRow);
+            productForm.reset();
+        });
+
+        productTable.addEventListener('click', (event) => {
+            if (event.target.classList.contains('delete-btn')) {
+                event.target.closest('tr').remove();
+            }
+        });
+    </script>
+</body>
+</html>

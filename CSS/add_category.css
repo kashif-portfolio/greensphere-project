@@ -1,0 +1,39 @@
+/* Add Category Styles */
+.add-category-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-category-container h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.add-category-container label {
+    margin: 10px 0 5px;
+}
+
+.add-category-container input, .add-category-container textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.add-category-container button {
+    margin-top: 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.add-category-container button:hover {
+    background-color: darkgreen;
+}

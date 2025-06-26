@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log In</title>
+    <link rel="stylesheet" href="css/sign in css.css">
+    <!-- icon ko show krny k lye library hai boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <style>
+        body{
+            
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/background/sign.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    </style>
+</head>
+<body>
+
+    <!-- log in Section -->
+     <!--wrapper class html elements ko group ker kay function perform krne kay lye hai --> 
+   <div class="wrapper">
+    <form action="">
+        <h1>login</h1>
+        <div class="input-box">
+            <input type="text" placeholder="username" required><i class='bx bxs-user'></i>   <!-- placeholder temporary text ko dekhata h -->
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="password" required><i class='bx bxs-lock-alt'></i> <!-- icons ko show krta h jo boxicons library sa lia gya h -->
+        </div>
+        <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot password</a>
+        </div>
+        <button type="submit" class="btn">sign in</button>
+        <div class="register-link">
+            <p>Don't have an Account <a href="registeration.html">Register</a></p>
+        </div>
+    </form>
+   </div>
+  
+   <script src="js/sign in java.js"></script>
+</body>
+</html>

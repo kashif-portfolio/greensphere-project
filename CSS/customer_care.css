@@ -1,0 +1,35 @@
+/* Customer Care Styles */
+.customer-care-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.customer-care-container table {
+    width: 100%;
+    border-collapse: collapse; /* Iska main purpose table ke cells ke borders ko ek saath merge karna hota hai, taake borders ek continuous line ki tarah dikhai dein.*/
+    margin-top: 20px;
+}
+
+.customer-care-container th,
+.customer-care-container td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.customer-care-container button.respond-btn { /*ska matlab hai ki customer-care-container class ke andar jo bhi button element hai aur uski class respond-btn hai, uspar yeh styles apply honge.
+    */  
+    background-color: blue;
+    color: white;                             
+    padding: 5px 10px;
+    border: none;  
+    cursor: pointer;
+}
+
+.customer-care-container button.respond-btn:hover {
+    background-color: darkblue;
+}

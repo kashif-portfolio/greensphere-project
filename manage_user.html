@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    <link rel="stylesheet" href="css/Manageuser.css">
+</head>
+<body>
+    <div class="manage-users-container">
+        <h2>Manage Users</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example User Row -->
+                <tr>
+                    <td>1</td>
+                    <td>Sir Hassan</td>
+                    <td>Hassan@example.com</td>
+                    <td><button class="delete-btn" onclick="deleteUser(1)">Delete</button></td>
+                </tr>
+                <!-- More rows can be added dynamically here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/manage_user.js"></script>
+</body>
+</html>

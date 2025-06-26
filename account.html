@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2d6a4f;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-picture {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #2d6a4f;
+            object-fit: cover;
+        }
+
+        .profile-picture input {
+            margin-top: 10px;
+            font-size: 1em;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #c3c3c3;
+            border-radius: 5px;
+        }
+
+        .form-group a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #40916c;
+            text-decoration: none;
+        }
+
+        .form-group a:hover {
+            text-decoration: underline;
+        }
+
+        .account-options {
+            margin-top: 20px;
+        }
+
+        .account-options ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .account-options ul li {
+            margin-bottom: 10px;
+        }
+
+        .account-options ul li a {
+            color: #40916c;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .account-options ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            padding: 15px;
+            background-color: #2d6a4f;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>Manage Your Account</header>
+
+    <div class="container">
+        <div class="profile-picture">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            <input type="file" accept="image/*">
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="Enter your first name">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Enter your last name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <a href="#">Change Password</a>
+            </div>
+
+            <div class="form-group">
+                <label for="pinCode">PIN Code</label>
+                <input type="text" id="pinCode" placeholder="Enter your PIN code">
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="Enter your location">
+            </div>
+        </form>
+
+        <div class="account-options">
+            <ul>
+                <li><a href="#">View Order History</a></li>
+                <li><a href="#">Favorite Plants</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Green Sphere | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
+    </footer>
+    <script src="JS/manage_user.js"></script>
+</body>
+</html>

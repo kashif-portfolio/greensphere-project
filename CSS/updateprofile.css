@@ -1,0 +1,38 @@
+/* Update Profile Styles */
+.update-profile-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.update-profile-container h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.update-profile-container label {
+    margin: 10px 0 5px;
+}
+
+.update-profile-container input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.update-profile-container button {
+    margin-top: 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.update-profile-container button:hover {
+    background-color: darkgreen;
+}
